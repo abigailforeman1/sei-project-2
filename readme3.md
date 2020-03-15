@@ -25,7 +25,7 @@ For this project we had to build a React application that consumed a public API,
 
 This was my second project while on General Assembly’s SEI course and also my first project building with React and APIs.
 
-![screenshot of space invaders game](https://github.com/abigailforeman1/sei-project-2/raw/master/assets/cocktailclub.png)
+![screenshot of space invaders game](https://github.com/abigailforeman1/sei-project-2/blob/master/src/assets/cocktailclub.png)
 
 ## Game architecture:
 The player controls the spaceship (Lisa Simpson) and can move along the bottom row of the grid from left to right. The player can also shoot towards the invading Bart aliens by pressing the spacebar which sends a bullet up that specific column of the grid. If the bullet hits one of the Bart aliens it removes it from the grid. 
