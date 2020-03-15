@@ -13,7 +13,6 @@ import CocktailSpecial from './components/cocktails/CocktailSpecial'
 const App = () => (
   <BrowserRouter>
     <main>
-      {/* add an if statement - if user is on homepage remove class of ACTIVE from navbar */}
       <nav className="navbar">
         <Link className="navbar-item is-small" to="/">HOME</Link>
         <Link className="navbar-item is-small" to="/cocktails">ALL COCKTAILS</Link>

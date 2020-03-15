@@ -3,7 +3,7 @@
 # General Assembly Project 2: The Cocktail Club
 
 ## Goal:
-To build a React application that consumes a public API.
+To build a React application that consumes a public API in pairs.
 
 ## Timeframe:
 48 hours 
@@ -120,9 +120,5 @@ Here is an example of the code for this functionality:
 ![screenshot of The Cocktail Club surprise page](https://github.com/abigailforeman1/sei-project-2/blob/master/src/assets/cocktailsurprise.png)
 
 ## Challenges and future improvements:
-1. The first challenge I encountered was creating the movement for the aliens. I used an array of numbers corresponding to grid square index numbers to place the aliens, so I had to ensure that the conditions to move them left, right, up and down worked for all aliens.
-2. Another challenge was stopping the players shots going through the aliens when more than one was fired up the same column. To fix this issue I wrote a piece of code that checked if a grid in that column already contained a bullet or not.
-3. There are a number of future improvements that I plan to make. Firstly, I would like to add functionality for the movement of the aliens to speed up once they have all been destroyed. I would also like to develop the leaderboard with names and everyscore displaying no matter if it was the highest or not.
-
-![screenshot of space invaders game over](https://github.com/abigailforeman1/sei-project-1/raw/master/assets/space_invaders2.png)
-
+1. The first challenge we faced was accessing the data from the API. This was our first time working with a public REST API so it took a bit of time to figure out. The cocktail data was stored as objects within an outer object, within an array - once we figured this out we were away.
+2. There is more functionality we would like to add on the index page. We would like to enhance the search form to include more functionality so that users can type the name of their favourite cocktail (this would use regex) and search based on different spirits. We would also like to incorporate a second API as the cocktail database was slightly limited with what information it gave us. We could add an API that finds bars and pubs in your local area to go and enjoy your cocktail special!

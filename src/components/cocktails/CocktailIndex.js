@@ -21,7 +21,7 @@ class CocktailIndex extends React.Component {
 
   handleChange = e => {
     e.preventDefault()
-    console.log(e.target.value)
+    // console.log(e.target.value)
     const alcoholSelected = e.target.value
     // console.log(alcoholSelected)
     const filterCocktails = this.state.cocktails.filter(cocktail => (cocktail.strAlcoholic === alcoholSelected || alcoholSelected === 'All'))
@@ -29,7 +29,7 @@ class CocktailIndex extends React.Component {
   }
 
   render() {
-    console.log(this.state.showCocktails)
+    // console.log(this.state.showCocktails)
     return (
       <div className="index-wrapper">
         <div className="title-wrapper">
