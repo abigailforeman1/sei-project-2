@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 class CocktailShow extends React.Component {
   state = {
     cocktail: {},
-    ingredients: [],
-    measurements: [],
+    // ingredients: [],
+    // measurements: [],
     combined: []
   }
 
@@ -22,10 +22,10 @@ class CocktailShow extends React.Component {
   }
 
   render() {
-    const ingredients = this.state.ingredients.filter(ingredient => (ingredient !== null))
-    const measurements = this.state.measurements.filter(measurement => (measurement !== null))
-    console.log(measurements)
-    console.log(ingredients)
+    // const ingredients = this.state.ingredients.filter(ingredient => (ingredient !== null))
+    // const measurements = this.state.measurements.filter(measurement => (measurement !== null))
+    // console.log(measurements)
+    // console.log(ingredients)
 
     if (!this.state.cocktail.idDrink) return null // checks that just in case the cocktail data isn't back yet or if there were a problem not to render the jsx
     return (
