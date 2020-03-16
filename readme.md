@@ -47,7 +47,7 @@ This classical React component displays all the cocktails retrieved from the dat
 
 Here is an example of code from the index page:
 
-```
+```javascript
   async componentDidMount() {
     try {
       const res = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=')
@@ -78,7 +78,7 @@ This classical React component allows users to enter their name and click 'submi
 
 Here is an example of the code for this functionality:
 
-```
+```javascript
   handleClick = () => {
     const randomCocktail = this.state.cocktails[(Math.floor(Math.random() * this.state.cocktails.length))]
     this.setState({ cocktailSpecial: randomCocktail })
