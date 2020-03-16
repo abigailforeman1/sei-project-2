@@ -3,10 +3,13 @@
 # General Assembly Project 2: The Cocktail Club
 
 ## Goal:
-To build a React application that consumes a public API in pairs.
+To build a React application that consumes a public API.
 
 ## Timeframe:
 48 hours 
+
+## Team mates:
+[Jesse Golding](https://github.com/Jesse2889)
 
 ## Technologies used:
 * React.js
