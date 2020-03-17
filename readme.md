@@ -25,7 +25,7 @@ To build a React application that consumes a public API.
 * https://www.thecocktaildb.com
 
 ## Deployment: 
-This game has been deployed on Heroku and can be found here: https://the-cocktail-club.herokuapp.com/
+This app has been deployed on Heroku and can be found here: https://the-cocktail-club.herokuapp.com/
 
 ## Getting started: 
 Use the clone button to download the game source code. From the root directory type 'npm run serve' in the terminal then navigate to localhost:4000 in your browser.
