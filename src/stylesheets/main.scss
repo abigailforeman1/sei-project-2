@@ -58,7 +58,8 @@ body {
   justify-content: center;
 }
 
-.main-title, .title {
+.main-title,
+.title {
   font-size: 90px;
   margin: 20px;
   font-family: $bebas-neue;
@@ -134,7 +135,6 @@ p {
 .navbar-item {
   color: white;
   background-size: cover;
-  
 }
 
 .form-wrapper {
@@ -142,10 +142,11 @@ p {
   justify-content: center;
 }
 
-#cocktails {
+#cocktails,
+#spirits {
   background-color: $coral-highlight;
   font-family: $questrial;
-  height: 30px;
+  height: 50px;
   letter-spacing: 2px;
   font-size: 15px;
   border-width: 3px;
@@ -154,8 +155,25 @@ p {
   cursor: pointer;
   justify-content: center;
   margin: 10px;
+  padding: 15px;
   text-align: center;
   white-space: nowrap;
+}
+
+#search-button {
+  background-color: white;
+  font-family: $questrial;
+  color: $coral-highlight;
+  height: 50px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  justify-content: center;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
 }
 
 .button {
