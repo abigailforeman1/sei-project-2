@@ -123,7 +123,7 @@ Here is an example of the code for this functionality:
 
 ![screenshot of The Cocktail Club surprise page](https://github.com/abigailforeman1/sei-project-2/blob/master/src/assets/cocktailsurprise.png)
 
-## Key learnings
+## Key learnings:
 1. Working under time pressure 
 
 This was my first experience of coding to a tight deadline and so required careful planning and assigning of tasks. We got the project finished in time and have learnt   
