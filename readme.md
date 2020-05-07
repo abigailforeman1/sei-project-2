@@ -25,7 +25,7 @@ To build a React application that consumes a public API.
 * https://www.thecocktaildb.com
 
 ## Deployment: 
-This app has been deployed on Heroku and can be found here: https://the-cocktail-club.herokuapp.com/
+This app has been deployed on Heroku and can be found here: https://the-cocktail-club-project.herokuapp.com/
 
 ## Getting started: 
 Use the clone button to download the game source code. From the root directory type 'npm run serve' in the terminal then navigate to localhost:4000 in your browser.
@@ -38,7 +38,7 @@ This was my second project while on General Assembly’s SEI course and also my 
 ![screenshot of The Cocktail Club homepage](https://github.com/abigailforeman1/sei-project-2/blob/master/src/assets/cocktailclub.png)
 
 ## Website architecture:
-Welcome to The Cocktail Club - your one-stop shop for cocktail inspiration and recipes! This website is made up of a homepage, a cocktail index page with search functionality, a cocktail show page, a cocktail surprise page and navbar with links. The public API used is a database of cocktails displaying information about ingredients, measurements, types of glass, alcohol content and an image. We picked this API as it offered a test API key to access the database if you are using it as a tool to learn.
+Welcome to The Cocktail Club - your one-stop shop for cocktail inspiration and recipes! This website is made up of a homepage, a cocktail index page with search functionality, a cocktail show page, a cocktail surprise page and navbar with links. The public API used is a database of cocktails displaying information about ingredients, measurements, types of glass, alcohol content and an image. We picked this API as it was fun to use and offered a test API key to access the database if you are using it as a tool to learn.
 
 To begin this project we set up an Insomnia workspace to help understand the data and begin dealing with initial data requests from the database. We then started drawing out the wireframes and sitemap on paper so we both agreed on the sites functionality and downloaded a number of Node.js packages. 
 
@@ -46,18 +46,19 @@ When you navigate to the website homepage you will be prompted to click the 'ent
 
 1. Cocktail index page
 
-This classical React component displays all the cocktails retrieved from the database with the axios get request. Each cocktail is displayed by mapping through the data and creating a Bulma card, which is refactored into a functional React component to keep the code clean. The user can see a name, image and main spirit used in each cocktail to help them find what they are looking for and they can also search for alcoholic/non-alcoholic/optional alcoholic drinks with the drop down search form. From here, users can click on their chosen cocktail and they will be linked to that cocktail's show page.
+This classical React component uses the spirit selected by the user from the select form to display all the relevant cocktails retrieved from the database. The chosen spirit is concatenated into the API url to perform the axios get request. Each cocktail is displayed by mapping through the data and creating a Bulma card, which is refactored into a functional React component to keep the code clean. The user can see a name, image and main ingredient used in each cocktail to help them find what they are looking for and they can also search for alcoholic/non-alcoholic/optional alcoholic drinks with the drop down search form. From here, users can click on their chosen cocktail and they will be linked to that cocktail's show page.
 
 Here is an example of code from the index page:
 
 ```javascript
-  async componentDidMount() {
+  displayCocktails = async () => {
     try {
-      const res = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=')
-      this.setState({ cocktails: res.data.drinks, showCocktails: res.data.drinks })
-    } catch (err) {
-      console.log(err)
-      this.props.history.push('/error')
+      const res = await axios.get(
+        `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${this.state.chosenSpirit}`
+      )
+      this.setState({ showCocktails: res.data.drinks })
+    } catch (error) {
+      console.log(error)
     }
   }
 
@@ -69,7 +70,7 @@ Here is an example of code from the index page:
   }
 ```
 
-![screenshot of The Cocktail Club index page](https://github.com/abigailforeman1/sei-project-2/blob/master/src/assets/cocktailindex.png)
+![screenshot of The Cocktail Club index page](https://github.com/abigailforeman1/sei-project-2/blob/master/src/assets/Cocktail-index-page.png)
 
 2. Cocktail show page
 
@@ -121,6 +122,16 @@ Here is an example of the code for this functionality:
 ```
 
 ![screenshot of The Cocktail Club surprise page](https://github.com/abigailforeman1/sei-project-2/blob/master/src/assets/cocktailsurprise.png)
+
+## Key learnings
+1. Working under time pressure 
+
+This was my first experience of coding to a tight deadline and so required careful planning and assigning of tasks. We got the project finished in time and have learnt   
+
+2. Sharing decision making
+
+It was nice to have a partner to discuss solutions and bounce ideas around with. It also taught me to be flexible and open-minded to someone elses way of thinking.
+
 
 ## Challenges and future improvements:
 1. The first challenge we faced was accessing the data from the API. This was our first time working with a public REST API so it took a bit of time to figure out. The cocktail data was stored as objects within an outer object, within an array - once we figured this out we were away.

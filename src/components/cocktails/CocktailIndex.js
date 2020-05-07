@@ -15,7 +15,15 @@ class CocktailIndex extends React.Component {
       'Tequila',
       'Kahlua',
       'Bourbon',
-      'Coffee Liqueur'
+      'Coffee Liqueur',
+      'Galliano',
+      'Grand Marnier',
+      'Amaretto',
+      'Cognac',
+      'Baileys irish cream',
+      'Champagne',
+      'Frangelico',
+      'Sambuca'
     ],
     chosenSpirit: ''
   }
